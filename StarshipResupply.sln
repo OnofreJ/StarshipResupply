@@ -1,0 +1,106 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Layers", "1 - Layers", "{46FE09FB-BEAB-49C1-BEEC-8B7B57983E0A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Tests", "2 - Tests", "{A51696ED-8A9F-4FD1-BD40-20FB8E7916B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{881A894F-5213-4ADE-B9B4-A6CA9424A72D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.1 - Presentation", "1.1 - Presentation", "{6F459F72-1121-4C39-BC07-6A71BDB10FDE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.2 - Application", "1.2 - Application", "{E26F0FB6-042D-49E5-9121-DD83DF9E5BC9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.3 - Infrastructure", "1.3 - Infrastructure", "{89314AD2-7B32-43B6-ACF2-92BC678ED6E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.2 - Application", "1.2 - Application", "{23E724E7-9C03-41B9-A8F8-E55E0551EE2F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarshipResupply.Console", "Src\Presentation\StarShipResupply.Presentation\StarshipResupply.Console.csproj", "{6A8BB4BC-68BB-4A98-8629-CD18E21DABC8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarshipResupply.Application.Services", "Src\Application\StarShipResupply.Application.Services\StarshipResupply.Application.Services.csproj", "{BD3F8E36-7813-4076-915D-4D48D0A824A5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarshipResupply.Infrastructure.CrossCutting", "Src\Infrastructure\StarShipResupply.Infrastructure.CrossCutting\StarshipResupply.Infrastructure.CrossCutting.csproj", "{1BF631DA-64C5-4678-B867-4825E999A633}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarshipResupply.Application.Services.Tests", "Tests\StarShipResupply.Application.Services.Tests\StarshipResupply.Application.Services.Tests.csproj", "{0569A62B-8FD8-4396-A543-216F2CFB308A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarshipResupply.Application.Dto", "Src\Application\StarShipResupply.Application.Dto\StarshipResupply.Application.Dto.csproj", "{4D32C27E-C670-40C8-B100-33D00D376F49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.4 - Data", "1.4 - Data", "{50929ECB-95FF-4B38-B7AA-053C8D971AC2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarshipResupply.Data.Gateway", "Src\Data\StarShipResupply.Data.Gateway\StarshipResupply.Data.Gateway.csproj", "{ECCBB44D-6A66-4F40-949A-A2F58DB0D01A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.5 - Domain", "1.5 - Domain", "{DA089D37-490B-40F1-AEF6-8A3B5A93808E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarshipResupply.Domain.Services", "Src\Domain\StarShipResupply.Domain.Services\StarshipResupply.Domain.Services.csproj", "{72F159C7-4461-42A1-B08F-FC20781E7444}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarshipResupply.Domain.Model", "Src\Domain\StarShipResupply.Domain.Model\StarshipResupply.Domain.Model.csproj", "{5A5FE08D-106D-4310-ADFA-C95F48997A23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A8BB4BC-68BB-4A98-8629-CD18E21DABC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A8BB4BC-68BB-4A98-8629-CD18E21DABC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A8BB4BC-68BB-4A98-8629-CD18E21DABC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A8BB4BC-68BB-4A98-8629-CD18E21DABC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD3F8E36-7813-4076-915D-4D48D0A824A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD3F8E36-7813-4076-915D-4D48D0A824A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD3F8E36-7813-4076-915D-4D48D0A824A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD3F8E36-7813-4076-915D-4D48D0A824A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BF631DA-64C5-4678-B867-4825E999A633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BF631DA-64C5-4678-B867-4825E999A633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BF631DA-64C5-4678-B867-4825E999A633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BF631DA-64C5-4678-B867-4825E999A633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0569A62B-8FD8-4396-A543-216F2CFB308A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0569A62B-8FD8-4396-A543-216F2CFB308A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0569A62B-8FD8-4396-A543-216F2CFB308A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0569A62B-8FD8-4396-A543-216F2CFB308A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D32C27E-C670-40C8-B100-33D00D376F49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D32C27E-C670-40C8-B100-33D00D376F49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D32C27E-C670-40C8-B100-33D00D376F49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D32C27E-C670-40C8-B100-33D00D376F49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECCBB44D-6A66-4F40-949A-A2F58DB0D01A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECCBB44D-6A66-4F40-949A-A2F58DB0D01A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECCBB44D-6A66-4F40-949A-A2F58DB0D01A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECCBB44D-6A66-4F40-949A-A2F58DB0D01A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72F159C7-4461-42A1-B08F-FC20781E7444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72F159C7-4461-42A1-B08F-FC20781E7444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72F159C7-4461-42A1-B08F-FC20781E7444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72F159C7-4461-42A1-B08F-FC20781E7444}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A5FE08D-106D-4310-ADFA-C95F48997A23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A5FE08D-106D-4310-ADFA-C95F48997A23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A5FE08D-106D-4310-ADFA-C95F48997A23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A5FE08D-106D-4310-ADFA-C95F48997A23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6F459F72-1121-4C39-BC07-6A71BDB10FDE} = {46FE09FB-BEAB-49C1-BEEC-8B7B57983E0A}
+		{E26F0FB6-042D-49E5-9121-DD83DF9E5BC9} = {46FE09FB-BEAB-49C1-BEEC-8B7B57983E0A}
+		{89314AD2-7B32-43B6-ACF2-92BC678ED6E7} = {46FE09FB-BEAB-49C1-BEEC-8B7B57983E0A}
+		{23E724E7-9C03-41B9-A8F8-E55E0551EE2F} = {A51696ED-8A9F-4FD1-BD40-20FB8E7916B0}
+		{6A8BB4BC-68BB-4A98-8629-CD18E21DABC8} = {6F459F72-1121-4C39-BC07-6A71BDB10FDE}
+		{BD3F8E36-7813-4076-915D-4D48D0A824A5} = {E26F0FB6-042D-49E5-9121-DD83DF9E5BC9}
+		{1BF631DA-64C5-4678-B867-4825E999A633} = {89314AD2-7B32-43B6-ACF2-92BC678ED6E7}
+		{0569A62B-8FD8-4396-A543-216F2CFB308A} = {23E724E7-9C03-41B9-A8F8-E55E0551EE2F}
+		{4D32C27E-C670-40C8-B100-33D00D376F49} = {E26F0FB6-042D-49E5-9121-DD83DF9E5BC9}
+		{50929ECB-95FF-4B38-B7AA-053C8D971AC2} = {46FE09FB-BEAB-49C1-BEEC-8B7B57983E0A}
+		{ECCBB44D-6A66-4F40-949A-A2F58DB0D01A} = {50929ECB-95FF-4B38-B7AA-053C8D971AC2}
+		{DA089D37-490B-40F1-AEF6-8A3B5A93808E} = {46FE09FB-BEAB-49C1-BEEC-8B7B57983E0A}
+		{72F159C7-4461-42A1-B08F-FC20781E7444} = {DA089D37-490B-40F1-AEF6-8A3B5A93808E}
+		{5A5FE08D-106D-4310-ADFA-C95F48997A23} = {DA089D37-490B-40F1-AEF6-8A3B5A93808E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02AF6213-AE80-4F5F-880C-E2CDB1663C94}
+	EndGlobalSection
+EndGlobal
