@@ -19,6 +19,5 @@
     <ProjectReference Include="..\..\Application\StarShipResupply.Application.Services\StarshipResupply.Application.Services.csproj" />
     <ProjectReference Include="..\..\Data\StarShipResupply.Data.Gateway\StarshipResupply.Data.Gateway.csproj" />
     <ProjectReference Include="..\..\Domain\StarShipResupply.Domain.Services\StarshipResupply.Domain.Services.csproj" />
-    <ProjectReference Include="..\..\Infrastructure\StarShipResupply.Infrastructure.CrossCutting\StarshipResupply.Infrastructure.CrossCutting.csproj" />
   </ItemGroup>
 </Project>

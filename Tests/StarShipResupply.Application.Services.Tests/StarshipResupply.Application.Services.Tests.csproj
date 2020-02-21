@@ -19,4 +19,8 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Src\Application\StarShipResupply.Application.Services\StarshipResupply.Application.Services.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Starship\" />
+  </ItemGroup>
 </Project>

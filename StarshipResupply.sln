@@ -18,15 +18,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.1 - Presentation", "1.1 -
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.2 - Application", "1.2 - Application", "{E26F0FB6-042D-49E5-9121-DD83DF9E5BC9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.3 - Infrastructure", "1.3 - Infrastructure", "{89314AD2-7B32-43B6-ACF2-92BC678ED6E7}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.2 - Application", "1.2 - Application", "{23E724E7-9C03-41B9-A8F8-E55E0551EE2F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarshipResupply.Console", "Src\Presentation\StarShipResupply.Presentation\StarshipResupply.Console.csproj", "{6A8BB4BC-68BB-4A98-8629-CD18E21DABC8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarshipResupply.Application.Services", "Src\Application\StarShipResupply.Application.Services\StarshipResupply.Application.Services.csproj", "{BD3F8E36-7813-4076-915D-4D48D0A824A5}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarshipResupply.Infrastructure.CrossCutting", "Src\Infrastructure\StarShipResupply.Infrastructure.CrossCutting\StarshipResupply.Infrastructure.CrossCutting.csproj", "{1BF631DA-64C5-4678-B867-4825E999A633}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarshipResupply.Application.Services.Tests", "Tests\StarShipResupply.Application.Services.Tests\StarshipResupply.Application.Services.Tests.csproj", "{0569A62B-8FD8-4396-A543-216F2CFB308A}"
 EndProject
@@ -36,7 +32,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.4 - Data", "1.4 - Data", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarshipResupply.Data.Gateway", "Src\Data\StarShipResupply.Data.Gateway\StarshipResupply.Data.Gateway.csproj", "{ECCBB44D-6A66-4F40-949A-A2F58DB0D01A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.5 - Domain", "1.5 - Domain", "{DA089D37-490B-40F1-AEF6-8A3B5A93808E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.3 - Domain", "1.3 - Domain", "{DA089D37-490B-40F1-AEF6-8A3B5A93808E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarshipResupply.Domain.Services", "Src\Domain\StarShipResupply.Domain.Services\StarshipResupply.Domain.Services.csproj", "{72F159C7-4461-42A1-B08F-FC20781E7444}"
 EndProject
@@ -56,10 +52,6 @@ Global
 		{BD3F8E36-7813-4076-915D-4D48D0A824A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD3F8E36-7813-4076-915D-4D48D0A824A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD3F8E36-7813-4076-915D-4D48D0A824A5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1BF631DA-64C5-4678-B867-4825E999A633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1BF631DA-64C5-4678-B867-4825E999A633}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1BF631DA-64C5-4678-B867-4825E999A633}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1BF631DA-64C5-4678-B867-4825E999A633}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0569A62B-8FD8-4396-A543-216F2CFB308A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0569A62B-8FD8-4396-A543-216F2CFB308A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0569A62B-8FD8-4396-A543-216F2CFB308A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -87,11 +79,9 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6F459F72-1121-4C39-BC07-6A71BDB10FDE} = {46FE09FB-BEAB-49C1-BEEC-8B7B57983E0A}
 		{E26F0FB6-042D-49E5-9121-DD83DF9E5BC9} = {46FE09FB-BEAB-49C1-BEEC-8B7B57983E0A}
-		{89314AD2-7B32-43B6-ACF2-92BC678ED6E7} = {46FE09FB-BEAB-49C1-BEEC-8B7B57983E0A}
 		{23E724E7-9C03-41B9-A8F8-E55E0551EE2F} = {A51696ED-8A9F-4FD1-BD40-20FB8E7916B0}
 		{6A8BB4BC-68BB-4A98-8629-CD18E21DABC8} = {6F459F72-1121-4C39-BC07-6A71BDB10FDE}
 		{BD3F8E36-7813-4076-915D-4D48D0A824A5} = {E26F0FB6-042D-49E5-9121-DD83DF9E5BC9}
-		{1BF631DA-64C5-4678-B867-4825E999A633} = {89314AD2-7B32-43B6-ACF2-92BC678ED6E7}
 		{0569A62B-8FD8-4396-A543-216F2CFB308A} = {23E724E7-9C03-41B9-A8F8-E55E0551EE2F}
 		{4D32C27E-C670-40C8-B100-33D00D376F49} = {E26F0FB6-042D-49E5-9121-DD83DF9E5BC9}
 		{50929ECB-95FF-4B38-B7AA-053C8D971AC2} = {46FE09FB-BEAB-49C1-BEEC-8B7B57983E0A}
