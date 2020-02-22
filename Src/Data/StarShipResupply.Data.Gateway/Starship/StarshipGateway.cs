@@ -25,13 +25,8 @@
 
             while (!string.IsNullOrWhiteSpace(starshipsEndPoint))
             {
-                var options = new JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true,
-                };
-
+                var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
                 var responseString = await httpClient.GetStringAsync(starshipsEndPoint).ConfigureAwait(false);
-
                 var starshipResult = JsonSerializer.Deserialize<StarshipResult>(responseString, options);
 
                 starshipsEndPoint = starshipResult.Next;

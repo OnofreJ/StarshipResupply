@@ -1,5 +1,8 @@
 ﻿namespace StarshipResupply.Data.Gateway.Settings
 {
+    using System.Diagnostics.CodeAnalysis;
+
+    [ExcludeFromCodeCoverage]
     public class GatewaySettings
     {
         /// <summary>

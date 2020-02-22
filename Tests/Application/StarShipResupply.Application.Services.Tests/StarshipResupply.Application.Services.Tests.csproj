@@ -17,10 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Src\Application\StarShipResupply.Application.Services\StarshipResupply.Application.Services.csproj" />
+    <Folder Include="Starship\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Starship\" />
+    <ProjectReference Include="..\..\..\Src\Application\StarShipResupply.Application.Dto\StarshipResupply.Application.Dto.csproj" />
+    <ProjectReference Include="..\..\..\Src\Application\StarShipResupply.Application.Services\StarshipResupply.Application.Services.csproj" />
   </ItemGroup>
 </Project>

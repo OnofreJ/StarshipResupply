@@ -10,13 +10,8 @@
     public class ResupplyCalculatorService : IResupplyCalculatorService
     {
         private const string Day = "day";
-        private const int HoursInDay = 24;
-        private const int HoursInMonth = 720;
-        private const int HoursInWeek = 168;
-        private const int HoursInYear = 8760;
         private const string Month = "month";
-        private const string UnknownMegalights = "Unknown";
-        private const int Unkwnow = 0;
+        private const string Unknown = "Unknown";
         private const string Week = "week";
         private const string Year = "year";
 
@@ -33,7 +28,7 @@
 
             if (starshipMegalights == default)
             {
-                return UnknownMegalights;
+                return Unknown;
             }
 
             var numberOfStops = Math.Truncate(megalights / (hours * starshipMegalights));
@@ -52,7 +47,7 @@
 
             if (consumableValues.First().Equals(consumableValues.Last()))
             {
-                return Unkwnow;
+                return (int)Hours.Unkwnow;
             }
 
             var numberOfHours = GetNumberOfHours(consumableValues.Last().ToLower());
@@ -71,19 +66,19 @@
         {
             if (period.Contains(Day))
             {
-                return HoursInDay;
+                return (int)Hours.InDay;
             }
             else if (period.Contains(Week))
             {
-                return HoursInWeek;
+                return (int)Hours.InWeek;
             }
             else if (period.Contains(Month))
             {
-                return HoursInMonth;
+                return (int)Hours.InMonth;
             }
             else if (period.Contains(Year))
             {
-                return HoursInYear;
+                return (int)Hours.InYear;
             }
             else
             {
