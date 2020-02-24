@@ -15,7 +15,11 @@
     <PackageReference Include="coverlet.collector" Version="1.0.1" />
     <PackageReference Include="FluentAssertions" Version="5.9.0" />
   </ItemGroup>
-
+  <ItemGroup>
+    <None Update="Starship\Starship.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Src\Data\StarShipResupply.Data.Gateway\StarshipResupply.Data.Gateway.csproj" />
   </ItemGroup>

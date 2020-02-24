@@ -4,6 +4,8 @@
     using FluentAssertions;
     using StarshipResupply.Data.Gateway.Settings;
     using StarshipResupply.Data.Gateway.Starship;
+    using System;
+    using System.IO;
     using System.Net.Http;
     using System.Threading;
     using System.Threading.Tasks;
@@ -11,7 +13,7 @@
 
     public class HttpMessageHandlerFake : HttpMessageHandler
     {
-        private const string FakeJson = "{ 'count': 37, 'next': 'https://swapi.co/api/starships/?page=2', 'previous': null, 'results': [ { 'name': 'Executor', 'model': 'Executor-class star dreadnought', 'consumables': '6 years', 'MGLT': '40' } ]}'";
+        private readonly string FakeJson = new StreamReader($"{AppContext.BaseDirectory}/Starship/Starship.json").ReadToEnd();
 
         protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {
