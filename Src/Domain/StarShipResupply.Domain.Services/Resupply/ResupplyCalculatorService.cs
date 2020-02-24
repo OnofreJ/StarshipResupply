@@ -9,12 +9,6 @@
     /// </summary>
     public class ResupplyCalculatorService : IResupplyCalculatorService
     {
-        private const string Day = "day";
-        private const string Month = "month";
-        private const string Unknown = "Unknown";
-        private const string Week = "week";
-        private const string Year = "year";
-
         /// <summary>
         /// Calculates the specified megalights.
         /// </summary>
@@ -26,9 +20,9 @@
             var starshipMegalights = GetStarshipMegalights(starship.Mglt);
             var hours = ConvertConsumablesInHours(starship.Consumables);
 
-            if (starshipMegalights == default)
+            if (starshipMegalights == default || hours == default)
             {
-                return Unknown;
+                return ResupplyConstants.Unknown;
             }
 
             var numberOfStops = Math.Truncate(megalights / (hours * starshipMegalights));
@@ -47,10 +41,15 @@
 
             if (consumableValues.First().Equals(consumableValues.Last()))
             {
-                return (int)Hours.Unkwnow;
+                return default;
             }
 
             var numberOfHours = GetNumberOfHours(consumableValues.Last().ToLower());
+
+            if (numberOfHours == default)
+            {
+                return default;
+            }
 
             int.TryParse(consumableValues.First(), out int number);
 
@@ -64,19 +63,19 @@
         /// <returns>An <see cref="int"/> value.</returns>
         private int GetNumberOfHours(string period)
         {
-            if (period.Contains(Day))
+            if (period.Contains(ResupplyConstants.Day))
             {
                 return (int)Hours.InDay;
             }
-            else if (period.Contains(Week))
+            else if (period.Contains(ResupplyConstants.Week))
             {
                 return (int)Hours.InWeek;
             }
-            else if (period.Contains(Month))
+            else if (period.Contains(ResupplyConstants.Month))
             {
                 return (int)Hours.InMonth;
             }
-            else if (period.Contains(Year))
+            else if (period.Contains(ResupplyConstants.Year))
             {
                 return (int)Hours.InYear;
             }

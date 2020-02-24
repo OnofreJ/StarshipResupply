@@ -23,7 +23,7 @@
         /// Gets or sets the previous.
         /// </summary>
         /// <value>The previous.</value>
-        public string previous { get; set; }
+        public string Previous { get; set; }
 
         /// <summary>
         /// Gets or sets the results.

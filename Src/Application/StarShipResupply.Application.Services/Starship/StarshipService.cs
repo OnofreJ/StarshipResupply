@@ -6,7 +6,7 @@
     using System.Threading.Tasks;
 
     /// <summary>
-    /// This class represents the service that manipulates starships from source.
+    /// This class represents the service that interacts with the gateway and manipulate the starships.
     /// </summary>
     /// <seealso cref="IStarshipService"/>
     internal sealed class StarshipService : IStarshipService

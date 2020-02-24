@@ -30,7 +30,6 @@
     {
         private const string FakeEndpoint = "http://localhost:1234";
         private readonly Fixture fixture;
-        private readonly GatewaySettings gatewaySettings;
         private readonly HttpClient httpClient;
 
         public StarshipGatewayTests()

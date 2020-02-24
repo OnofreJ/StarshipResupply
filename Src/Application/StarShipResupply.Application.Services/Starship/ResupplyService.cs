@@ -21,7 +21,7 @@
         }
 
         /// <summary>
-        /// Calculates the specified megalights.
+        /// Calculates the specified megalights for a given starship.
         /// </summary>
         /// <param name="megalights">The megalights.</param>
         /// <param name="starship">The starship.</param>

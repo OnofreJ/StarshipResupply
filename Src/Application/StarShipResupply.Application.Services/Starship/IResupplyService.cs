@@ -8,7 +8,7 @@
     public interface IResupplyService
     {
         /// <summary>
-        /// Calculates the specified megalights.
+        /// Method defition to calculate the specified megalights.
         /// </summary>
         /// <param name="megalights">The megalights.</param>
         /// <param name="starship">The starship.</param>
