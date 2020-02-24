@@ -1,5 +1,8 @@
 ﻿namespace StarshipResupply.Domain.Model.Starship
 {
+    /// <summary>
+    /// The hours use to calculation (abbreviated by a multiple of 24).
+    /// </summary>
     public enum Hours
     {
         Unkwnow = 0,
