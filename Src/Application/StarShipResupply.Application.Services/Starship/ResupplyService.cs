@@ -4,6 +4,7 @@
     using StarshipResupply.Domain.Services.Resupply;
 
     /// <summary>
+    /// This class represents the service that calculates resupply.
     /// </summary>
     /// <seealso cref="StarshipResupply.Application.Services.Starship.IResupplyService"/>
     internal sealed class ResupplyService : IResupplyService

@@ -14,7 +14,7 @@
         /// Adds the application services to DI container.
         /// </summary>
         /// <param name="services">The services.</param>
-        /// <returns></returns>
+        /// <returns>An <see cref="IServiceCollection"/> object.</returns>
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
             services.AddSingleton<IStarshipService, StarshipService>();

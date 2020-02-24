@@ -4,14 +4,17 @@
     using StarshipResupply.Domain.Services.Resupply;
     using System.Diagnostics.CodeAnalysis;
 
+    /// <summary>
+    /// Represents the extensions to domain services.
+    /// </summary>
     [ExcludeFromCodeCoverage]
     public static class DomainServicesExtensions
     {
         /// <summary>
-        /// Adds the domain services.
+        /// Adds the domain services to DI container.
         /// </summary>
         /// <param name="services">The services.</param>
-        /// <returns></returns>
+        /// <returns>An <see cref="IServiceCollection"/> object.</returns>
         public static IServiceCollection AddDomainServices(this IServiceCollection services)
         {
             services.AddSingleton<IResupplyCalculatorService, ResupplyCalculatorService>();

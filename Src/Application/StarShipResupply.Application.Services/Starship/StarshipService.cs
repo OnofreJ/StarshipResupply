@@ -6,8 +6,9 @@
     using System.Threading.Tasks;
 
     /// <summary>
+    /// This class represents the service that manipulates starships from source.
     /// </summary>
-    /// <seealso cref="StarshipResupply.Application.Services.Starship.IStarshipService"/>
+    /// <seealso cref="IStarshipService"/>
     internal sealed class StarshipService : IStarshipService
     {
         private readonly IStarshipGateway starshipGateway;
@@ -22,9 +23,9 @@
         }
 
         /// <summary>
-        /// Gets the asynchronous.
+        /// Gets the starships.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>An <see cref="IEnumerable{Starship}"/> object.</returns>
         public async Task<IEnumerable<Starship>> GetAsync()
         {
             return await starshipGateway.GetAsync().ConfigureAwait(false);
