@@ -1,7 +1,7 @@
 # StarshipResupply
 
 [![Build status](https://ci.appveyor.com/api/projects/status/github/OnofreJ/StarshipResupply?svg=true)](https://ci.appveyor.com/api/projects/status/github/OnofreJ/StarshipResupply)
-[![Coverage Status](https://coveralls.io/repos/github/OnofreJ/StarshipResupply/badge.svg?branch=master)](https://coveralls.io/github/OnofreJ/StarshipResupply?branch=master)
+[![codecov](https://codecov.io/gh/OnofreJ/StarshipResupply/branch/master/graph/badge.svg)](https://codecov.io/gh/OnofreJ/StarshipResupply)
 [![Tests Status](https://img.shields.io/appveyor/tests/Onofrej/StarshipResupply/master)](https://img.shields.io/appveyor/tests/Onofrej/StarshipResupply/master)
 
 
