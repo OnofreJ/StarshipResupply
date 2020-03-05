@@ -8,8 +8,7 @@ before_build:
 build:
   project: StarshipResupply.sln
   verbosity: minimal
-  publish_wap: true
 
 test_script:
-- OpenCover.Console.exe -register:user -target:"C:/Program Files/dotnet/dotnet.exe" -targetargs:test -filter:"+[StarshipResupply.Application.Services.Tests*]* -[StarshipResupply.Domain.Services.Tests*]* -[StarshipResupply.Data.Gateway.Tests*]*" -output:".\StarshipResupply_Coverage.xml" -oldstyle
+- OpenCover.Console.exe -register:user -target:"C:/Program Files/dotnet/dotnet.exe" -targetargs:test -filter:"+[StarshipResupply.Application.Services.Tests*]* -[StarshipResupply.Domain.Services.Tests*]* -[StarshipResupply.Data.Gateway.Tests*]*" -output:".\StarshipResupply_Coverage.xml"
 - codecov -f "StarshipResupply_Coverage.xml"
