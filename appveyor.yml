@@ -16,7 +16,7 @@ test_script:
 - OpenCover.Console.exe 
     -register:user 
     -target:"C:/Program Files/dotnet/dotnet.exe"
-    -targetargs:"test --logger:trx;LogFileName=results.trx /p:DebugType=full C:\projects\starshipresupply\Tests\Data\StarshipResupply.Data.Gateway.Tests.csproj"
+    -targetargs:"test --logger:trx;LogFileName=results.trx /p:DebugType=full C:\projects\starshipresupply\Tests\Data\StarshipResupply.Data.Gateway.Tests\StarshipResupply.Data.Gateway.Tests.csproj"
     -filter:"+[StarshipResupply.Application.Services.Tests*]* -[StarshipResupply.Domain.Services.Tests*]* -[StarshipResupply.Data.Gateway.Tests*]*" 
     -output:".\StarshipResupply_Coverage.xml" -oldstyle
 - Type "StarshipResupply_Coverage.xml"
