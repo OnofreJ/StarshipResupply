@@ -14,9 +14,16 @@ build:
 
 test_script:
 - OpenCover.Console.exe 
-    -register:user -target:"C:/Program Files/dotnet/dotnet.exe" 
-    -targetargs:test 
+    -register:user 
+    -target:"C:/Program Files/dotnet/dotnet.exe" 
+#    -targetargs:test 
+    -targetargs:"test --logger:trx;LogFileName=results.trx /p:DebugType=full +[StarshipResupply.Application.Services.Tests*]* -[StarshipResupply.Domain.Services.Tests*]* -[StarshipResupply.Data.Gateway.Tests*]*"
     -filter:"+[StarshipResupply.Application.Services.Tests*]* -[StarshipResupply.Domain.Services.Tests*]* -[StarshipResupply.Data.Gateway.Tests*]*" 
     -output:".\StarshipResupply_Coverage.xml" -oldstyle
 - Type "StarshipResupply_Coverage.xml"
-- codecov -f "StarshipResupply_Coverage.xml" -t $(codecov_token)
+- codecov -f "StarshipResupply_Coverage.xml"
+
+#StarshipResupply.Data.Gateway.Tests -> C:\projects\starshipresupply\Tests\Data\StarshipResupply.Data.Gateway.Tests\bin\Debug\netcoreapp3.1\StarshipResupply.Data.Gateway.Tests.dll
+#StarshipResupply.Application.Services.Tests -> C:\projects\starshipresupply\Tests\Application\StarShipResupply.Application.Services.Tests\bin\Debug\netcoreapp3.1\StarshipResupply.Application.Services.Tests.dll
+#StarshipResupply.Domain.Services.Tests -> C:\projects\starshipresupply\Tests\Domain\StarshipResupply.Domain.Services.Tests\bin\Debug\netcoreapp3.1\StarshipResupply.Domain.Services.Tests.dll
+#OpenCover.Console.exe -register:user -target:"C:/Program Files/dotnet/dotnet.exe" -targetargs:test -filter:"+[UnitTestTargetProject*]* -[MyUnitTests*]*" -output:".\MyProject_coverage.xml" -oldstyle
