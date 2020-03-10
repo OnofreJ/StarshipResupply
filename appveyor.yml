@@ -10,6 +10,6 @@ build:
   verbosity: minimal
 
 test_script:
-- OpenCover.Console.exe -register:onofrej -target:"C:/Program Files/dotnet/dotnet.exe" -targetargs:test -filter:"+[StarshipResupply*Tests*]*" -output:".\StarshipResupply_Coverage.xml" -oldstyle
+- OpenCover.Console.exe -register:onofrej -target:"C:/Program Files/dotnet/dotnet.exe" -targetargs:test -filter:"+[StarshipResupply.*]*" -output:".\StarshipResupply_Coverage.xml" -oldstyle
 - Type "StarshipResupply_Coverage.xml"
 - codecov -f "StarshipResupply_Coverage.xml"
