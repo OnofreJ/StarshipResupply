@@ -1,6 +1,3 @@
-init:
-  - git config --global core.autocrlf true
-
 image: Visual Studio 2019
 
 before_build:
@@ -13,16 +10,5 @@ build:
   verbosity: minimal
 
 test_script:
-- OpenCover.Console.exe 
-    -register:user 
-    -target:"C:/Program Files/dotnet/dotnet.exe"
-    -targetargs:"test --logger:trx;LogFileName=results.trx /p:DebugType=full C:\projects\starshipresupply\Tests\Data\StarshipResupply.Data.Gateway.Tests\StarshipResupply.Data.Gateway.Tests.csproj"
-    -filter:"+[StarshipResupply.Application.Services.Tests*]* -[StarshipResupply.Domain.Services.Tests*]* -[StarshipResupply.Data.Gateway.Tests*]*" 
-    -output:".\StarshipResupply_Coverage.xml" -oldstyle
-- Type "StarshipResupply_Coverage.xml"
+- OpenCover.Console.exe -register:user -target:"C:/Program Files/dotnet/dotnet.exe" -targetargs:test -filter:"+[StarshipResupply.Application.Services.Tests*]* -[StarshipResupply.Domain.Services.Tests*]* -[StarshipResupply.Data.Gateway.Tests*]*" -output:".\StarshipResupply_Coverage.xml" -oldstyle
 - codecov -f "StarshipResupply_Coverage.xml"
-
-#StarshipResupply.Data.Gateway.Tests -> C:\projects\starshipresupply\Tests\Data\StarshipResupply.Data.Gateway.Tests.csproj
-#StarshipResupply.Application.Services.Tests -> C:\projects\starshipresupply\Tests\Application\StarShipResupply.Application.Services.Tests\bin\Debug\netcoreapp3.1\StarshipResupply.Application.Services.Tests.dll
-#StarshipResupply.Domain.Services.Tests -> C:\projects\starshipresupply\Tests\Domain\StarshipResupply.Domain.Services.Tests\bin\Debug\netcoreapp3.1\StarshipResupply.Domain.Services.Tests.dll
-#OpenCover.Console.exe -register:user -target:"C:/Program Files/dotnet/dotnet.exe" -targetargs:test -filter:"+[UnitTestTargetProject*]* -[MyUnitTests*]*" -output:".\MyProject_coverage.xml" -oldstyle
